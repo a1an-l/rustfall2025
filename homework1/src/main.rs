@@ -9,10 +9,24 @@ fn celsius_to_fahrenheit(c: f64) -> f64{
 }
 
 fn main() {
-let temp_f:f64 =32.0;
+    let mut temp_f:f64 =32.0;
 
-println!("{}°F = {}°C", temp_f, fahrenheit_to_celsius(temp_f));
+    println!("{}°F = {}°C", temp_f, fahrenheit_to_celsius(temp_f));
 
+    for _ in 0..5{
+        temp_f+=1.0;
+        println!("{}°F = {}°C", temp_f, fahrenheit_to_celsius(temp_f));
 
+    }
+
+    let mut temp_c:f64 =0.0;
+
+    println!("{}°C = {}°F", temp_c, celsius_to_fahrenheit(temp_c));
+
+    for _ in 0..5{
+        temp_c+=1.0;
+        println!("{}°C = {}°F", temp_c, celsius_to_fahrenheit(temp_c));
+
+    }
 
 }
